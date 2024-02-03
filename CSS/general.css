@@ -1,0 +1,179 @@
+/*
+
+--- 01 TYPOGRAPHY SYSTEMS
+
+--font size (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+--font weights:
+default: 400
+medium:500
+semi-bold:600
+bold:700
+
+
+--line-heights:
+default: 1  
+small: 1.05
+medium:1.2
+paragraph-default: 1.6
+
+--letter-spacing:
+-0.5px
+0.75px
+
+--- 02 COLORS
+
+--primary: 
+
+
+--tints:
+
+
+--shades:
+
+--accents:
+
+--greys:
+
+
+---03 SHADOWS
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+---04 BORDER-RADIUS
+default: 
+medium:
+
+---05 WHITE SPACE
+
+--spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+@font-face {
+    font-family: "Druk";
+    src: url("../fonts/Druk-Bold-Trial.otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "GTA";
+    src: url("../fonts/GT America Regular.otf");
+    font-weight: bold;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: GTA;
+    line-height: 1;
+    font-weight: 400;
+    color: #3d3935;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Druk;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 4.6rem;
+    line-height: 5.8rem;
+}
+
+p {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.btn {
+    transition: all 0.5s;
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ee2737;
+    padding: 1.2rem 2.4rem;
+    font-size: 1.6rem;
+    border-radius: 0.4rem;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #be1f2c;
+}
+
+.heading-primary {
+    font-size: 13rem;
+    line-height: 11.2rem;
+    letter-spacing: .02rem;
+}
+
+.heading-secondary {
+    font-size: 4.6rem;
+    line-height: 5.8rem;
+}
+
+.padding-b-20 {
+    padding-bottom: 2rem;
+}
+
+.padding-b-10 {
+    padding-bottom: 1rem;
+}
+
+.padding-t-20 {
+    padding-top: 2rem;
+}
+
+.padding-r-20 {
+    padding-right: 2rem;
+}
+
+.push-right {
+    margin-left: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+ion-icon {
+    color: #ffffff;
+    font-size: 3.2rem;
+}
+
+.flex {
+    display: flex;
+    flex-grow: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+.h-element {
+    opacity: 1;
+    transition: transform 1s, opacity 1s;
+}
+
+.element--hidden {
+    opacity: 0;
+}
